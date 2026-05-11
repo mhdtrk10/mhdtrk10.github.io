@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pawse - Break Your Loop</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #111a2b;
+      --muted: #9fb0c8;
+      --text: #f4f7fb;
+      --accent: #4fd1c5;
+      --accent2: #ff5b5b;
+      --border: rgba(255,255,255,0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #09101c 0%, #0e1727 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .hero {
+      padding: 72px 24px 48px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--muted);
+      background: rgba(255,255,255,0.03);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: clamp(36px, 7vw, 64px);
+      line-height: 1.05;
+      margin: 0 0 16px;
+    }
+    .sub {
+      max-width: 720px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin: 28px 0 0;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 22px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.24);
+    }
+    h2 {
+      font-size: 28px;
+      margin: 0 0 12px;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 0 0 8px;
+    }
+    p, li { color: var(--muted); }
+    ul { padding-left: 20px; margin: 8px 0 0; }
+    .section { margin: 26px 0; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .cta {
+      display: inline-block;
+      margin-top: 18px;
+      background: linear-gradient(90deg, var(--accent), #68e0cf);
+      color: #081019;
+      padding: 12px 18px;
+      border-radius: 14px;
+      font-weight: 700;
+    }
+    .note {
+      border-left: 3px solid var(--accent2);
+      padding-left: 14px;
+      color: var(--muted);
+    }
+    footer {
+      padding: 36px 0 54px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="badge">Pawse - Break Your Loop</div>
+      <h1>Take smarter breaks from endless scrolling.</h1>
+      <p class="sub">
+        Pawse helps you pause distracting apps, start focus sessions, and build healthier screen habits with playful break companions.
+      </p>
+      <a class="cta" href="#support">Get Support</a>
+    </section>
+
+    <section class="section card">
+      <h2>What is Pawse?</h2>
+      <p>
+        Pawse is a digital wellbeing app that helps users interrupt unhealthy screen habits.
+        You can choose apps or categories, start a focus session, and let Pawse temporarily restrict access during break time.
+      </p>
+      <div class="grid">
+        <div class="card">
+          <h3>Focus Sessions</h3>
+          <p>Start a session, reduce distractions, and take structured breaks when your time is up.</p>
+        </div>
+        <div class="card">
+          <h3>Break Companions</h3>
+          <p>Use free characters, premium characters, custom photos, or custom GIFs during breaks.</p>
+        </div>
+        <div class="card">
+          <h3>Healthier Habits</h3>
+          <p>Replace compulsive app switching with a simple, playful, and more mindful routine.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="support" class="section card">
+      <h2>Support</h2>
+      <p>
+        Need help with Pawse? For support, bug reports, purchase issues, or general questions, contact us by email.
+      </p>
+      <p><strong>Email:</strong> <a href="mailto:support@pawseapp.com">support@pawseapp.com</a></p>
+      <p><strong>Response time:</strong> We aim to respond within 2-3 business days.</p>
+      <div class="note">
+        Before contacting support, please include your device model, iOS version, and a short description of the issue.
+      </div>
+    </section>
+
+    <section class="section card">
+      <h2>Frequently Asked Questions</h2>
+      <h3>How does Pawse work?</h3>
+      <p>Pawse uses Screen Time / Family Controls permissions to let users select apps and temporarily restrict access during a break.</p>
+
+      <h3>Do I need an account?</h3>
+      <p>No. Pawse does not require a login to use its core functionality.</p>
+
+      <h3>How do premium purchases work?</h3>
+      <p>Some companions are available as individual unlocks, and a monthly premium plan unlocks all premium content, including Custom Photo and Custom GIF features.</p>
+
+      <h3>How do I restore purchases?</h3>
+      <p>You can restore purchases from the Settings screen inside the app.</p>
+    </section>
+
+    <section class="section card">
+      <h2>Privacy</h2>
+      <p>
+        Pawse is designed to help users manage screen time with explicit permission. The app may use Apple Screen Time / Family Controls frameworks to apply temporary restrictions selected by the user.
+      </p>
+      <ul>
+        <li>Pawse does not require an account for core use.</li>
+        <li>Pawse only uses permissions the user explicitly grants.</li>
+        <li>Purchase status may be used to unlock premium features.</li>
+        <li>Basic local settings may be stored on device to keep your session and app preferences available.</li>
+      </ul>
+    </section>
+
+    <section class="section card">
+      <h2>Contact</h2>
+      <p>
+        Developer: Mehdi Oturak<br />
+        Email: <a href="mailto:mehdi_oturak_54@hotmail.com">mehdi_oturak_54@hotmail.com</a>
+      </p>
+    </section>
+
+    <footer>
+      © 2026 Mehdi Oturak. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
